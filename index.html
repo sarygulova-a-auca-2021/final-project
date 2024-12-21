@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Новости.kg</title>
+        <link rel="stylesheet" href="style.css" class="style">
+    </head>
+    <body>
+        <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+        <img src="https://cdn.imgchest.com/files/p7bwcdqap7n.png" style="position: absolute; top: 0; left: 0; z-index: -1;" alt="KG Website Background">
+        <div class="page-grid">
+            <header class="header">
+                <div class="header-left">
+                    <a href="#">About Us</a>
+                    <a href="#">Radio Online</a>
+                </div>
+            </header>
+
+            <div class="logo">
+                <img src="https://cdn.imgchest.com/files/l4nec6mjxx4.png" alt="Новости.kg">
+            </div>
+
+            <div class="languages-box6">
+                <button>Kyrgyz</button>
+                <button>Russian</button>
+            </div>        
+
+            <nav class="nav">
+                <ul>
+                    <li class="world">In the world</li>
+                    <li class="society">Society</li>
+                    <li class="economy">Economy</li>
+                    <li class="sport">Sport</li>
+                    <li class="world-cup">World Cup 2022</li>
+                    <li class="safety">Safety</li>
+                    <li class="incidents">Incidents</li>
+                    <li class="no-politics">no politics</li>
+                </ul>
+            </nav>
+
+            <div class="main-content">
+                <img src="https://cdn.imgchest.com/files/46acql2zno7.jpg" alt="Main story">
+                <div class="top-stories">
+                    <div>Fares in Bishkek will not be raised yet</div>
+                </div>
+            </div>
+
+            <div class="side-content-box8">
+                <div class="weather">
+                    <h3>Weather in Kyrgyzstan</h3>
+                    <p>Weather in Bishkek</p>
+                    <p>+8°C Max: +10°C Min: +4°C</p>
+                </div>
+                <div class="exchange">
+                    <h3>Exchange Rates</h3>
+                    <p>1 USD/KGS: 84.3</p>
+                </div>
+                <div class="ads">
+                    <p>Ad content here</p>
+                </div>
+            </div>
+            
+            <div class="news-section">
+                <div class="news-item">
+                    <img src="https://cdn.imgchest.com/files/46acql2zno7.jpg" alt="News image">
+                    <div>
+                        <h3>The world’s population has reached 8 billion people</h3>
+                        <p>The population milestone was achieved with new records...</p>
+                    </div>
+                </div>
+            
+                <div class="news-item">
+                    <img src="https://cdn.imgchest.com/files/46acql2zno7.jpg" alt="News image">
+                    <div>
+                        <h3>Construction of a school for 500 students has begun in Batken</h3>
+                        <p>The new school will provide much-needed education...</p>
+                    </div>
+                </div>
+            
+                <div class="news-item">
+                    <img src="https://cdn.imgchest.com/files/46acql2zno7.jpg" alt="News image">
+                    <div>
+                        <h3>The year ended with a high harvest - 1.4 times more grain was received</h3>
+                        <p>Farmers report a bumper harvest this year, significantly boosting the economy...</p>
+                    </div>
+                </div>
+            </div>        
+
+            <div class="news-section-box5">
+                <div class="news-item">
+                    <h3>There will be no water in part of Bishkek on November 17</h3>
+                    <p>There will be no water in part of Bishkek on November 17. This was reported to the mayor's office. From 9 am to 8 pm, blackouts are expected on Abakanskaya, Deng Xiaoping, Kustanaiskaya, Profsoyuznaya, Volkova, Sadygaliev, and Bezymyannaya streets. The measures are related to the repair work at the water intake.</p>
+                    <a href="#">Related news: In part of Bishkek.. More...</a>
+                </div>
+            
+                <div class="news-item">
+                    <h3>A new water supply system will appear in a number of villages in the Chui region</h3>
+                    <p>A new water supply system will appear in a number of villages in the Chui region. The tender for construction work was announced by the regional department of capital construction. More than 180 million soms are provided for the implementation of projects. The contractor will have to carry out a water supply system in the villages of Murak, Ak-Torpok, Chon-Aryk...</p>
+                    <a href="#">More...</a>
+                </div>
+            
+                <div class="news-item">
+                    <h3>The center of Bishkek will be cleared of minibuses by the middle of next year</h3>
+                    <p>The center of Bishkek will be cleared of minibuses by the middle of next year. According to the head of the Department of Transport Maksat Nusuvaliev, it is planned to launch gas-powered buses, electric buses, and trolleybuses instead of minibuses. Minibus drivers will be provided with new routes...</p>
+                    <a href="#">More...</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function switchStyle() {
+                let style = document.querySelector('.style');
+                if (style.getAttribute('href') === 'style.css') {
+                    style.setAttribute('href', 'style2.css');
+                } else {
+                    style.setAttribute('href', 'style.css');
+                }
+            }
+        </script>
+    </body>
+</html>
+

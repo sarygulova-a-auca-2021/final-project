@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f9f9f9; */
+    max-width: 1143px;
+    min-height: 1583px;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-rows: minmax(38px, auto) minmax(117px, auto) auto auto auto;
+    grid-template-columns: minmax(270px, 1fr) minmax(463px, 2fr) minmax(335px, 1fr);
+    grid-template-areas:
+        "one one one"
+        "two two six"
+        "three three three"
+        "seven four eight"
+        "five five five";
+}
+
+.logo {
+    grid-area: two;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.languages-box6 {
+    grid-area: six;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ddd;
+}
+
+.nav {
+    grid-area: three;
+    background-color: #007cbb;
+    padding: 10px;
+}
+
+.main-content {
+    grid-area: four;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.side-content-box8 {
+    grid-area: eight;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.news-section {
+    grid-area: seven;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-section-box5 {
+    grid-area: five;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 500px) {
+    .page-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "one"
+            "two"
+            "six"
+            "three"
+            "four"
+            "seven"
+            "eight"
+            "five";
+    }
+
+    .news-section, .news-section-box5 {
+        grid-template-columns: 1fr;
+    }
+}
