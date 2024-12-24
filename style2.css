@@ -4,7 +4,6 @@
 }
 
 body {
-    /* opacity: 0.5; */
     font-family: Open-Sans, sans-serif;
     max-width: 1143px;
     min-height: 1583px;
@@ -56,9 +55,8 @@ body {
     height: 117px;
 }
 
-/* Moved languages to box 1 */
 .languages {
-    grid-area: one; /* Moved to box 1 */
+    grid-area: one; 
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -91,11 +89,10 @@ body {
     background-color: #888888;
 }
 
-/* Redone navigation as vertical */
 .nav {
     grid-area: three;
     display: flex;
-    flex-direction: column; /* Vertical direction */
+    flex-direction: column; 
 }
 
 .nav ul {
@@ -120,7 +117,7 @@ body {
 .search-container {
     grid-area: two;
     display: flex;
-    justify-content: flex-end; /* Align the search bar to the left */
+    justify-content: flex-end; 
     padding-left: 15px;
     padding-top: 11px;
     align-items: center;
@@ -165,7 +162,6 @@ body {
     grid-template-rows: auto auto;
     gap: 20px;
     position: relative; 
-    /* margin: 15px; */
 }
 
 .main-content img {
@@ -469,25 +465,25 @@ body {
     }
 
     .nav {
-        display: none; /* Hides the vertical menu */
+        display: none; 
     }
 
     .header {
-        justify-content: center; /* Centers the header content */
+        justify-content: center;
     }
 
     .search-container {
-        justify-content: center; /* Centers the search bar */
+        justify-content: center;
         padding-left: 0;
     }
 
     .logo img {
-        width: 80%; /* Scales logo for smaller screens */
+        width: 80%;
         height: auto;
     }
 
     .main-content img {
-        width: 100%; /* Adjusts image to fit screen width */
+        width: 100%;
         height: auto;
     }
 
@@ -506,13 +502,13 @@ body {
         margin-left: 10px;
         margin-right: 10px;
     }
-    
+
     .hamburger-menu {
-        display: block; /* Show the hamburger icon */
+        display: block;
     }
 
     .nav {
-        display: none; /* Hide the vertical menu by default */
+        display: none;
         position: absolute;
         top: 50px;
         right: 10px;
@@ -523,6 +519,6 @@ body {
     }
 
     .nav.open {
-        display: block; /* Show the vertical menu when it's open */
+        display: block;
     }
 }
